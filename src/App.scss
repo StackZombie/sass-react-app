@@ -1,0 +1,48 @@
+$primary-color : black ;
+$secondary-color: white;
+
+$warning-color:yellow;
+$succes-color:green;
+$danger-color:red;
+
+$large : 50px;
+$medium : 40px;
+$small : 30px;
+$tiny : 15px;
+
+
+$myFont: Helvetica, sans-serif;
+
+h1{
+    font-size:$large;   
+    font-family: $myFont;
+}
+
+h2{
+    font-size:$small;   
+    font-family: $myFont;
+}
+
+#container{
+    text-align: center;
+    margin-top: 5em;
+}
+
+// nested 
+#toast{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    .warning{
+        color:$primary-color;
+        background-color: $warning-color;
+    }
+    .success{
+        color:$secondary-color;
+        background-color: $succes-color;
+    }
+    .danger{
+        color:$secondary-color;
+        background-color: $danger-color;
+    }
+}
