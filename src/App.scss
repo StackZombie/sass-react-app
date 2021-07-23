@@ -66,6 +66,12 @@ h3{
     border: $unit + px +" solid " + $color;
 }
 
+@mixin set-icon($name){
+    .icon-#{$name}{
+        background-image: url("./icon/"+$name+ ".png" );
+    }
+}
+
 .box{
     @include border(2 , $aqua);
     @include margin(top,15);
@@ -74,3 +80,4 @@ h3{
     @include margin(right,15);
     @include padding(left,15);
 }
+
