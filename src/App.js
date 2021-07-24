@@ -1,8 +1,9 @@
-import './App.scss';
-
+import './scss/style.scss';
+import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <>
+    <NavBar />
     <div id="container">
         <h1>Hello World</h1>
     </div>

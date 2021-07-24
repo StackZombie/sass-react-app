@@ -1,0 +1,26 @@
+@import '../../scss/variable';
+@import '../../scss/padding';
+
+.content{
+    background-color: $bgColor ;
+    color: $fgColor;
+    height:80px;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+           @include padding-all(15);
+            cursor: pointer;
+        }
+        p:hover{
+            color:$hoverColor;
+        }
+    }
+}
+
