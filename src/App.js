@@ -13,6 +13,7 @@ function App() {
     </div>
     <div class="box">
       <h3>This text comes inside a box</h3>
+      <p>This text is related to tiny size</p>
     </div>
     </>
   );

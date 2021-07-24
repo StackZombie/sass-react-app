@@ -12,21 +12,40 @@ $small : 30px;
 $tiny : 15px;
 
 
+// control directives 
+@mixin heading($size){
+    @if($size == large){
+        font-size : $large
+    }
+    @else if($size == medium){
+        font-size : $medium
+    }
+    @else if ($size == small){
+        font-size : $small
+    }
+    @else if ($size == tiny){
+        font-size: $tiny;
+    }
+}
+
 $myFont: Helvetica, sans-serif;
 
 h1{
-    font-size:$large;   
+    @include heading(large);
     font-family: $myFont;
 }
 
 h2{
-    font-size:$small;   
+    @include heading(medium);
     font-family: $myFont;
 }
 
 h3{
-    font-size:$medium;   
+    @include heading(small);
     font-family: $myFont;
+}
+p{
+    @include heading(tiny);
 }
 #container{
     text-align: center;
