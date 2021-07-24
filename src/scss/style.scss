@@ -1,15 +1,11 @@
-$primary-color : black ;
-$secondary-color: white;
+@import 'variable';
+@import 'padding';
+body{
+    background-color: $light-color;
+    font-family: $myFont;
+    line-height: 1.5;
+}
 
-$warning-color:yellow;
-$succes-color:green;
-$danger-color:red;
-$aqua : #7FFFD4;
-
-$large : 50px;
-$medium : 40px;
-$small : 30px;
-$tiny : 15px;
 
 
 // control directives 
@@ -28,7 +24,7 @@ $tiny : 15px;
     }
 }
 
-$myFont: Helvetica, sans-serif;
+
 
 h1{
     @include heading(large);
@@ -77,17 +73,13 @@ p{
     margin-#{$position} : $unit + px;
 }
 
-@mixin padding($position , $unit){
-    padding-#{$position} : $unit + px;
-}
-
 @mixin border($unit,$color){
     border: $unit + px +" solid " + $color;
 }
 
 @mixin set-icon($name){
     .icon-#{$name}{
-        background-image: url("./icon/"+$name+ ".png" );
+        background-image: url("../icon/" +$name+".png");
     }
 }
 

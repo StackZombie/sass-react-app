@@ -1,0 +1,7 @@
+@mixin padding($position , $unit){
+    padding-#{$position} : $unit + px;
+}
+
+@mixin padding-all($units){
+    padding : $units + px ;
+}
