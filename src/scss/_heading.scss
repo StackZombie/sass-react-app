@@ -1,0 +1,15 @@
+// control directives 
+@mixin heading($size){
+    @if($size == large){
+        font-size : $large
+    }
+    @else if($size == medium){
+        font-size : $medium
+    }
+    @else if ($size == small){
+        font-size : $small
+    }
+    @else if ($size == tiny){
+        font-size: $tiny;
+    }
+}
