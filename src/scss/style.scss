@@ -1,6 +1,12 @@
 @import 'variable';
 @import 'padding';
 @import 'heading';
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body{
     background-color: $light-color;
     font-family: $myFont;
