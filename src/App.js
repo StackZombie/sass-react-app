@@ -16,6 +16,21 @@ function App() {
       <h3>This text comes inside a box</h3>
       <p>This text is related to tiny size</p>
     </div>
+
+    <div class="flex-container">
+      <div class="box-1">
+        <h3>Box One</h3>
+        <p>This is the description for the Box 1 </p>
+      </div>
+      <div class="box-2">
+        <h3>Box Two</h3>
+        <p>This is the description for the Box 1 </p>
+      </div>
+      <div class="box-3">
+        <h3>Box Three</h3>
+        <p>This is the description for the Box 1 </p>
+      </div>
+    </div>
     </>
   );
 }
