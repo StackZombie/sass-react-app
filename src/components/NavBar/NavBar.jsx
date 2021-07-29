@@ -1,21 +1,18 @@
-import React ,{useState,useEffect} from 'react';
+import React ,{useState} from 'react';
 import './NavBar.scss';
 
 
 const NavBar= ()=>{
 
-    const [itmes, setItems] = useState([]);
+    const [items, setItems] = useState([
+        "Home",
+        "About",
+        "Researches",
+        "Portfolio",
+        "Contact Us"
+    ]);
 
-    useEffect(()=>{
-        setItems([
-            "Home",
-            "About",
-            "Researches",
-            "Portfolio",
-            "Contact Us"
-        ]);
-
-    });
+    
 
 
     const render = () =>{
@@ -24,7 +21,7 @@ const NavBar= ()=>{
                 <nav>
                     <ul>
                         {
-                            itmes.map((item,key)=>{
+                            items.map((item,key)=>{
                                 return (
                                 <li id={key}>
                                     <p>{item}</p>
